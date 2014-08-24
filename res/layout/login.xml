@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:padding="10dp"
+        >
+    <EditText
+            android:id="@+id/login_username_et"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="username"
+            android:text="tiantian.china.2@gmail.com"
+            />
+
+    <EditText
+            android:id="@+id/login_password_et"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:text="20522912810291"
+            />
+
+    <Button
+            android:id="@+id/login_submit_btn"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Login"
+            />
+
+</LinearLayout>
+
