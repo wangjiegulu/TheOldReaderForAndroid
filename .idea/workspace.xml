@@ -59,6 +59,7 @@
     <list default="true" id="711b20b1-311b-447a-bfa4-61aea5c26d4a" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../android/AndroidBucket/src/com/wangjie/androidbucket/present/ABFragment.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../android/androidInject/src/com/wangjie/androidinject/annotation/present/AIFragment.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/screenshots/device-2014-08-31-152637.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../android/AndroidBucket/src/com/wangjie/androidbucket/present/ABActivity.java" afterPath="$PROJECT_DIR$/../android/AndroidBucket/src/com/wangjie/androidbucket/present/ABActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../android/AndroidBucket/src/com/wangjie/androidbucket/application/ABApplication.java" afterPath="$PROJECT_DIR$/../android/AndroidBucket/src/com/wangjie/androidbucket/application/ABApplication.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../android/AndroidBucket/src/com/wangjie/androidbucket/utils/ABPrefsUtil.java" afterPath="$PROJECT_DIR$/../android/AndroidBucket/src/com/wangjie/androidbucket/utils/ABPrefsUtil.java" />
@@ -67,9 +68,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../android/androidInject/src/com/wangjie/androidinject/annotation/core/net/AINetWork.java" afterPath="$PROJECT_DIR$/../android/androidInject/src/com/wangjie/androidinject/annotation/core/net/AINetWork.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../android/androidInject/src/com/wangjie/androidinject/annotation/util/AITextUtil.java" afterPath="$PROJECT_DIR$/../android/androidInject/src/com/wangjie/androidinject/annotation/util/AITextUtil.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../android/AndroidBucket/src/com/wangjie/androidbucket/objs/DelayObj.java" afterPath="$PROJECT_DIR$/../android/AndroidBucket/src/com/wangjie/androidbucket/objs/DelayObj.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/wangjie/theoldreaderforandroid/ui/fragment/FeedFragment.java" afterPath="$PROJECT_DIR$/src/com/wangjie/theoldreaderforandroid/ui/fragment/FeedFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../android/AndroidBucket/src/com/wangjie/androidbucket/customviews/sublayout/SubLayoutManager.java" afterPath="$PROJECT_DIR$/../android/AndroidBucket/src/com/wangjie/androidbucket/customviews/sublayout/SubLayoutManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TheOldReaderForAndroid.iws" />
     <ignored path=".idea/workspace.xml" />
