@@ -1,5 +1,7 @@
 package com.wangjie.theoldreaderforandroid.ui.activity;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentStatePagerAdapter;
@@ -11,16 +13,19 @@ import android.widget.Toast;
 import com.astuetz.PagerSlidingTabStrip;
 import com.wangjie.androidbucket.log.Logger;
 import com.wangjie.androidbucket.objs.DelayObj;
+import com.wangjie.androidbucket.utils.ABPrefsUtil;
 import com.wangjie.androidinject.annotation.annotations.base.AILayout;
 import com.wangjie.androidinject.annotation.annotations.base.AIView;
 import com.wangjie.theoldreaderforandroid.R;
 import com.wangjie.theoldreaderforandroid.database.DbExecutor;
 import com.wangjie.theoldreaderforandroid.entity.CustomDelayTab;
 import com.wangjie.theoldreaderforandroid.entity.FeedItem;
+import com.wangjie.theoldreaderforandroid.prefs.PrefsKey;
 import com.wangjie.theoldreaderforandroid.ui.base.BaseActivity;
 import com.wangjie.theoldreaderforandroid.ui.base.BaseFragment;
 import com.wangjie.theoldreaderforandroid.ui.fragment.FeedFragment;
 import com.wangjie.theoldreaderforandroid.ui.fragment.SettingFragment;
+import com.wangjie.theoldreaderforandroid.util.AppUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -64,15 +69,34 @@ public class MainActivity extends BaseActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main, menu);
+        menu.findItem(R.id.menu_main_account).setTitle(ABPrefsUtil.getInstance().getString(PrefsKey.KEY_USERNAME));
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        Toast.makeText(context, item.getTitle(), Toast.LENGTH_SHORT).show();
-//        switch(item.getItemId()){
-//
-//        }
+        switch(item.getItemId()){
+            case R.id.menu_main_account:
+                Toast.makeText(context, item.getTitle(), Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.menu_main_setting:
+                Toast.makeText(context, item.getTitle(), Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.menu_main_loginout:
+                new AlertDialog.Builder(context)
+                        .setTitle("Warn")
+                        .setMessage("Login Out?")
+                        .setNegativeButton("No", null)
+                        .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                AppUtil.loginOut(context);
+                                finish();
+                            }
+                        })
+                        .show();
+                break;
+        }
         return super.onOptionsItemSelected(item);
     }
 

@@ -9,11 +9,19 @@
           <!--app:actionViewClass="android.support.v7.widget.SearchView"-->
           <!--app:showAsAction="ifRoom" />-->
 
-    <item android:id="@+id/menu_main_b"
+    <item android:id="@+id/menu_main_account"
+          android:title="account"
+          android:orderInCategory="100"
+          app:showAsAction="never" />
+
+    <item android:id="@+id/menu_main_setting"
           android:title="setting"
           android:orderInCategory="100"
-          app:showAsAction="ifRoom" />
+          app:showAsAction="never" />
 
-
+    <item android:id="@+id/menu_main_loginout"
+          android:title="loginout"
+          android:orderInCategory="100"
+          app:showAsAction="never" />
 
 </menu>

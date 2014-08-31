@@ -11,6 +11,7 @@ import com.wangjie.theoldreaderforandroid.entity.FeedItem;
 import com.wangjie.theoldreaderforandroid.entity.RuntaskResult;
 import com.wangjie.theoldreaderforandroid.net.NetWorkUtil;
 import com.wangjie.theoldreaderforandroid.prefs.PrefsKey;
+import com.wangjie.theoldreaderforandroid.util.ResultParserUtil;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -83,49 +84,15 @@ public class FeedIdsBeforeRuntask extends Runtask<Void, RuntaskResult<FeedItem>>
             if(null != itemJa){
                 for(int i = 0, len = itemJa.length(); i < len; i++){
                     JSONObject itemJo = itemJa.getJSONObject(i);
-                    FeedItem item = new FeedItem();
-                    String id = ABJsonUtil.getString(itemJo, "id");
-                    if(ABTextUtil.isEmpty(id)){
+                    FeedItem item = ResultParserUtil.parserFeedItem(itemJo);
+                    if(null == item){
                         continue;
-                    }
-                    item.setId(id.substring(id.lastIndexOf("/")));
-                    item.setUserId(PrefsKey.getCachedUserId());
-                    item.setCrawlTimeMsec(ABJsonUtil.getLong(itemJo, "crawlTimeMsec"));
-                    item.setTimestampUsec(ABJsonUtil.getLong(itemJo, "timestampUsec"));
-                    item.setTitle(ABJsonUtil.getString(itemJo, "title"));
-                    item.setPublished(ABJsonUtil.getLong(itemJo, "published"));
-                    item.setUpdated(ABJsonUtil.getLong(itemJo, "updated"));
-
-                    JSONArray canonicalJa = ABJsonUtil.getJSONArray(itemJo, "canonical");
-                    if(!ABJsonUtil.isEmpty(canonicalJa)){
-                        item.setUrlCanonical(ABJsonUtil.getString(canonicalJa.getJSONObject(0), "href"));
-                    }
-
-                    JSONArray alternateJa = ABJsonUtil.getJSONArray(itemJo, "alternate");
-                    if(!ABJsonUtil.isEmpty(alternateJa)){
-                        item.setUrlAlternate(ABJsonUtil.getString(alternateJa.getJSONObject(0), "href"));
-                    }
-
-                    JSONObject summaryJo = ABJsonUtil.getJSONObject(itemJo, "summary");
-                    if(null != summaryJo){
-                        String summaryContent = ABJsonUtil.getString(summaryJo, "content");
-                        summaryContent = ABTextUtil.isEmpty(summaryContent) || summaryContent.length() < 51 ? summaryContent : summaryContent.substring(0, 50);
-                        item.setSummaryContent(summaryContent);
-                        item.setSummaryContentHtml(Html.fromHtml(summaryContent));
-                    }
-
-                    item.setAuthor(ABJsonUtil.getString(itemJo, "author"));
-
-                    JSONObject originJo = ABJsonUtil.getJSONObject(itemJo, "origin");
-                    if(null != originJo){
-                        item.setOriginStreamId(ABJsonUtil.getString(originJo, "streamId"));
                     }
                     try{
                         dbExecutor.executeSaveIfNotExist(item);
                     }catch(Exception ex){
                         Logger.e(TAG, ex);
                     }
-
                     items.add(item);
                 }
             }
