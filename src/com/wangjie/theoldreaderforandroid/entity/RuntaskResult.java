@@ -23,6 +23,12 @@ public class RuntaskResult<T> implements Serializable{
     public static <T> RuntaskResult<T> generateSuccess(Class<T> clazz){
         return new RuntaskResult<T>().setResultCode(RESULT_CODE_SUCCESS);
     }
+    public static RuntaskResult generateFail(){
+        return new RuntaskResult().setResultCode(RESULT_CODE_FAIL).setErrorMessage("Operation Failure");
+    }
+    public static RuntaskResult generateSuccess(){
+        return new RuntaskResult().setResultCode(RESULT_CODE_SUCCESS);
+    }
 
 
     public int getResultCode() {

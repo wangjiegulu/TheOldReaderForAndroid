@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:padding="8dp"
+        >
+
+    <TextView
+            android:id="@+id/feed_fragment_lv_item_title_tv"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textColor="@color/text_feed_item_title"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="18sp"
+            android:text="Title"
+            />
+    <TextView
+            android:id="@+id/feed_fragment_lv_item_content_tv"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textColor="@color/text_feed_item_content"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="16sp"
+            android:text="Content"
+            />
+
+
+
+</LinearLayout>
+

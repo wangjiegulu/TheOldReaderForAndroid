@@ -12,6 +12,7 @@ import com.wangjie.androidinject.annotation.annotations.base.AIClick;
 import com.wangjie.androidinject.annotation.annotations.base.AILayout;
 import com.wangjie.androidinject.annotation.annotations.base.AIView;
 import com.wangjie.theoldreaderforandroid.R;
+import com.wangjie.theoldreaderforandroid.biz.GetUserInfoRuntask;
 import com.wangjie.theoldreaderforandroid.biz.LoginRuntask;
 import com.wangjie.theoldreaderforandroid.entity.LoginInfo;
 import com.wangjie.theoldreaderforandroid.entity.RuntaskResult;
@@ -38,6 +39,7 @@ public class LoginActivity extends BaseActivity{
             startActivity(new Intent(context, MainActivity.class));
             finish();
         }
+
 
 
     }
@@ -70,7 +72,7 @@ public class LoginActivity extends BaseActivity{
         return true;
     }
 
-    public void executeLogin(){
+    private void executeLogin(){
         final String username = usernameEt.getText().toString();
         String password = passwordEt.getText().toString();
 
@@ -91,8 +93,34 @@ public class LoginActivity extends BaseActivity{
                         .putString(PrefsKey.KEY_USERNAME, username)
                         .commit();
 
-                startActivity(new Intent(context, MainActivity.class));
-                finish();
+//                startActivity(new Intent(context, MainActivity.class));
+//                finish();
+                executeGetUserInfo();
+            }
+        });
+    }
+
+    private void executeGetUserInfo(){
+        ThreadPool.go(new GetUserInfoRuntask(){
+            @Override
+            public void onBefore() {
+                super.onBefore();
+                obtainLoadingDialog().setMessage("loading...");
+            }
+
+            @Override
+            public void onResult(RuntaskResult result) {
+                super.onResult(result);
+                obtainLoadingDialog().cancel();
+                if(result.getResultCode() < 0){
+                    Toast.makeText(context, result.getErrorMessage(), Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                if(!ABTextUtil.isEmpty(ABPrefsUtil.getInstance().getString(PrefsKey.KEY_USER_ID))){
+                    startActivity(new Intent(context, MainActivity.class));
+                    finish();
+                }
+
             }
         });
     }

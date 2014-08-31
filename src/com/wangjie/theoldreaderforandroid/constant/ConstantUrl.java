@@ -21,7 +21,14 @@ public class ConstantUrl {
      */
     public static final String URL_USER_INFO = BASE_URL_API + "/user-info?output=json";
 
-
+    /**
+     * 获取feed ids
+     */
+    public static final String URL_FEED_ITEMS_IDS = BASE_URL_API + "/stream/items/ids?output=json";
+    /**
+     * 获取feed内容
+     */
+    public static final String URL_FEED_ITEMS_CONTENT = BASE_URL_API + "/stream/items/contents?output=json";
 
 
 

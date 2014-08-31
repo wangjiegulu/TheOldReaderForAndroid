@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--<color name="bg_actionbar">#f8635f</color>-->
+    <color name="bg_actionbar">#36a8ba</color>
+
+    <color name="text_feed_item_title">#333333</color>
+    <color name="text_feed_item_content">#666666</color>
+
+    <color name="progress_color">#f8995f</color>
+
+</resources>

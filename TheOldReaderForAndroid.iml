@@ -13,12 +13,15 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/gen" isTestSource="false" generated="true" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Android API 19 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="androidBucket" />
     <orderEntry type="module" module-name="androidInject" />
     <orderEntry type="module" module-name="ImageLoaderSample" />
-    <orderEntry type="library" exported="" name="android-support-v4" level="application" />
+    <orderEntry type="library" name="android-support-v4" level="application" />
+    <orderEntry type="module" module-name="PagerSlidingTabStrip" />
+    <orderEntry type="library" name="android-support-v7-appcompat" level="application" />
+    <orderEntry type="module" module-name="appcompat" />
   </component>
 </module>
 

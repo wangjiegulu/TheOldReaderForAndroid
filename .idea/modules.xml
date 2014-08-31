@@ -3,9 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../android/ImageLoaderSample/ImageLoaderSample.iml" filepath="$PROJECT_DIR$/../android/ImageLoaderSample/ImageLoaderSample.iml" />
+      <module fileurl="file://$USER_HOME$/Desktop/work_utils/android_libs/PagerSlidingTabStrip-master/library/PagerSlidingTabStrip.iml" filepath="$USER_HOME$/Desktop/work_utils/android_libs/PagerSlidingTabStrip-master/library/PagerSlidingTabStrip.iml" />
       <module fileurl="file://$PROJECT_DIR$/TheOldReaderForAndroid.iml" filepath="$PROJECT_DIR$/TheOldReaderForAndroid.iml" />
       <module fileurl="file://$PROJECT_DIR$/../android/AndroidBucket/androidBucket.iml" filepath="$PROJECT_DIR$/../android/AndroidBucket/androidBucket.iml" />
       <module fileurl="file://$PROJECT_DIR$/../android/androidInject/androidInject.iml" filepath="$PROJECT_DIR$/../android/androidInject/androidInject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../java/android/sdk/extras/android/support/v7/appcompat/appcompat.iml" filepath="$PROJECT_DIR$/../../java/android/sdk/extras/android/support/v7/appcompat/appcompat.iml" />
     </modules>
   </component>
 </project>
