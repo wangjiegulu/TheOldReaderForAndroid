@@ -14,7 +14,7 @@
             psts:pstsShouldExpand="true"
             psts:pstsIndicatorHeight="2dp"
             psts:pstsUnderlineHeight="2dp"
-            psts:pstsIndicatorColor="@android:color/black"
+            psts:pstsIndicatorColor="#f8995f"
             />
 
     <android.support.v4.view.ViewPager

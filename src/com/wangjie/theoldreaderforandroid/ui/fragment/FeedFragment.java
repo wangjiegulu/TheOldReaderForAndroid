@@ -72,7 +72,8 @@ public class FeedFragment extends BaseFragment implements SwipeRefreshLayout.OnR
                 synchronized (((Object)this).getClass()) {
                     if (!isLoadingOlder && !isNoOlder) {
                         if (scrollState == AbsListView.OnScrollListener.SCROLL_STATE_IDLE) { // 当不滚动时
-                            if (view.getLastVisiblePosition() >= view.getChildCount()) { // 是否滚动到底部
+                            int lastPosition = feeds.size() - 1;
+                            if (view.getLastVisiblePosition() >= lastPosition) { // 是否滚动到底部
                                 isLoadingOlder = true;
                                 refreshData(false);
                             }
@@ -95,6 +96,12 @@ public class FeedFragment extends BaseFragment implements SwipeRefreshLayout.OnR
                 feeds.get(feeds.size() - 1).getCrawlTimeMsec();
 
         ThreadPool.go(new FeedIdsBeforeRuntask(dbExecutor, before, 20){
+            @Override
+            public void onBefore() {
+                super.onBefore();
+                feedSwipe.setRefreshing(true);
+            }
+
             @Override
             public void onResult(RuntaskResult<FeedItem> result) {
                 super.onResult(result);
