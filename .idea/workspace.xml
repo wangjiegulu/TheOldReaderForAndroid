@@ -59,7 +59,7 @@
     <list default="true" id="711b20b1-311b-447a-bfa4-61aea5c26d4a" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../android/AndroidBucket/src/com/wangjie/androidbucket/present/ABFragment.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../android/androidInject/src/com/wangjie/androidinject/annotation/present/AIFragment.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/screenshots/device-2014-08-31-152637.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/screenshots/device-2014-08-31-220345.png" afterPath="$PROJECT_DIR$/screenshots/device-2014-08-31-220345.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../android/AndroidBucket/src/com/wangjie/androidbucket/present/ABActivity.java" afterPath="$PROJECT_DIR$/../android/AndroidBucket/src/com/wangjie/androidbucket/present/ABActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../android/AndroidBucket/src/com/wangjie/androidbucket/application/ABApplication.java" afterPath="$PROJECT_DIR$/../android/AndroidBucket/src/com/wangjie/androidbucket/application/ABApplication.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../android/AndroidBucket/src/com/wangjie/androidbucket/utils/ABPrefsUtil.java" afterPath="$PROJECT_DIR$/../android/AndroidBucket/src/com/wangjie/androidbucket/utils/ABPrefsUtil.java" />
@@ -67,8 +67,12 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../android/androidInject/src/com/wangjie/androidinject/annotation/core/orm/AIDbExecutor.java" afterPath="$PROJECT_DIR$/../android/androidInject/src/com/wangjie/androidinject/annotation/core/orm/AIDbExecutor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../android/androidInject/src/com/wangjie/androidinject/annotation/core/net/AINetWork.java" afterPath="$PROJECT_DIR$/../android/androidInject/src/com/wangjie/androidinject/annotation/core/net/AINetWork.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../android/androidInject/src/com/wangjie/androidinject/annotation/util/AITextUtil.java" afterPath="$PROJECT_DIR$/../android/androidInject/src/com/wangjie/androidinject/annotation/util/AITextUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/wangjie/theoldreaderforandroid/util/AppUtil.java" afterPath="$PROJECT_DIR$/src/com/wangjie/theoldreaderforandroid/util/AppUtil.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../android/AndroidBucket/src/com/wangjie/androidbucket/objs/DelayObj.java" afterPath="$PROJECT_DIR$/../android/AndroidBucket/src/com/wangjie/androidbucket/objs/DelayObj.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/wangjie/theoldreaderforandroid/ui/activity/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/wangjie/theoldreaderforandroid/ui/activity/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../android/AndroidBucket/src/com/wangjie/androidbucket/customviews/sublayout/SubLayoutManager.java" afterPath="$PROJECT_DIR$/../android/AndroidBucket/src/com/wangjie/androidbucket/customviews/sublayout/SubLayoutManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/menu/main.xml" afterPath="$PROJECT_DIR$/res/menu/main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TheOldReaderForAndroid.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -91,11 +95,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="FeedFragment.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="FeedFragment.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/wangjie/theoldreaderforandroid/ui/fragment/FeedFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.113402" vertical-offset="1044" max-vertical-offset="2358">
-              <caret line="95" column="72" selection-start-line="95" selection-start-column="72" selection-end-line="95" selection-end-column="72" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1062" max-vertical-offset="2358">
+              <caret line="99" column="56" selection-start-line="99" selection-start-column="56" selection-end-line="99" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -107,19 +111,22 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="131" max-vertical-offset="594">
-              <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+            <state vertical-scroll-proportion="-4.3396225" vertical-offset="94" max-vertical-offset="594">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/wangjie/theoldreaderforandroid/ui/activity/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1692" max-vertical-offset="2484">
-              <caret line="94" column="29" selection-start-line="94" selection-start-column="29" selection-end-line="94" selection-end-column="29" />
-              <folding />
+            <state vertical-scroll-proportion="0.6494845" vertical-offset="918" max-vertical-offset="1908">
+              <caret line="83" column="41" selection-start-line="83" selection-start-column="41" selection-end-line="83" selection-end-column="41" />
+              <folding>
+                <element signature="e#3236#3553#0" expanded="true" />
+                <element signature="e#3526#3527#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -127,8 +134,8 @@
       <file leaf-file-name="main.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/menu/main.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="396" max-vertical-offset="594">
-              <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+            <state vertical-scroll-proportion="-12.44" vertical-offset="103" max-vertical-offset="594">
+              <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -245,12 +252,12 @@
         <option value="$PROJECT_DIR$/res/layout/main.xml" />
         <option value="$PROJECT_DIR$/res/layout/setting_fragment.xml" />
         <option value="$PROJECT_DIR$/res/values/styles.xml" />
-        <option value="$PROJECT_DIR$/res/menu/main.xml" />
-        <option value="$PROJECT_DIR$/src/com/wangjie/theoldreaderforandroid/util/AppUtil.java" />
-        <option value="$PROJECT_DIR$/src/com/wangjie/theoldreaderforandroid/ui/activity/MainActivity.java" />
         <option value="$PROJECT_DIR$/src/com/wangjie/theoldreaderforandroid/util/ResultParserUtil.java" />
         <option value="$PROJECT_DIR$/src/com/wangjie/theoldreaderforandroid/biz/FeedIdsBeforeRuntask.java" />
         <option value="$PROJECT_DIR$/src/com/wangjie/theoldreaderforandroid/ui/fragment/FeedFragment.java" />
+        <option value="$PROJECT_DIR$/src/com/wangjie/theoldreaderforandroid/util/AppUtil.java" />
+        <option value="$PROJECT_DIR$/res/menu/main.xml" />
+        <option value="$PROJECT_DIR$/src/com/wangjie/theoldreaderforandroid/ui/activity/MainActivity.java" />
       </list>
     </option>
   </component>
@@ -974,6 +981,7 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874495" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -994,7 +1002,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874495" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32838285" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1041,6 +1048,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5407407" vertical-offset="2912" max-vertical-offset="9288">
           <caret line="198" column="0" selection-start-line="198" selection-start-column="0" selection-end-line="198" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1062,6 +1072,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2278481" vertical-offset="0" max-vertical-offset="864">
           <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1316,13 +1327,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wangjie/theoldreaderforandroid/util/AppUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.52079564" vertical-offset="0" max-vertical-offset="594">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/setting_fragment.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -1330,25 +1334,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3887689" vertical-offset="0" max-vertical-offset="463">
           <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="131" max-vertical-offset="594">
-          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/menu/main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="396" max-vertical-offset="594">
-          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
           <folding />
         </state>
       </provider>
@@ -1388,14 +1373,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wangjie/theoldreaderforandroid/ui/activity/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="918" max-vertical-offset="1908">
-          <caret line="94" column="29" selection-start-line="94" selection-start-column="29" selection-end-line="94" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/wangjie/theoldreaderforandroid/biz/FeedIdsBeforeRuntask.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1746">
@@ -1404,11 +1381,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wangjie/theoldreaderforandroid/util/AppUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.52079564" vertical-offset="0" max-vertical-offset="553">
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/wangjie/theoldreaderforandroid/ui/fragment/FeedFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.113402" vertical-offset="1044" max-vertical-offset="2358">
-          <caret line="95" column="72" selection-start-line="95" selection-start-column="72" selection-end-line="95" selection-end-column="72" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1044" max-vertical-offset="2358">
+          <caret line="99" column="56" selection-start-line="99" selection-start-column="56" selection-end-line="99" selection-end-column="56" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.3396225" vertical-offset="94" max-vertical-offset="594">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/menu/main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.44" vertical-offset="103" max-vertical-offset="594">
+          <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wangjie/theoldreaderforandroid/ui/activity/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6494845" vertical-offset="918" max-vertical-offset="1908">
+          <caret line="83" column="41" selection-start-line="83" selection-start-column="41" selection-end-line="83" selection-end-column="41" />
+          <folding>
+            <element signature="e#3236#3553#0" expanded="true" />
+            <element signature="e#3526#3527#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

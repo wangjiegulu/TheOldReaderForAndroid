@@ -17,7 +17,7 @@ public class AppUtil {
      * 退出登录
      * @param context
      */
-    public static void loginOut(Context context){
+    public static void logout(Context context){
         Intent iLoginOut = new Intent(context, LoginActivity.class);
         iLoginOut.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         ABPrefsUtil.getInstance().editor.clear().commit();

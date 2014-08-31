@@ -20,7 +20,7 @@
           app:showAsAction="never" />
 
     <item android:id="@+id/menu_main_loginout"
-          android:title="loginout"
+          android:title="logout"
           android:orderInCategory="100"
           app:showAsAction="never" />
 

@@ -12,14 +12,11 @@ import android.view.MenuItem;
 import android.widget.Toast;
 import com.astuetz.PagerSlidingTabStrip;
 import com.wangjie.androidbucket.log.Logger;
-import com.wangjie.androidbucket.objs.DelayObj;
 import com.wangjie.androidbucket.utils.ABPrefsUtil;
 import com.wangjie.androidinject.annotation.annotations.base.AILayout;
 import com.wangjie.androidinject.annotation.annotations.base.AIView;
 import com.wangjie.theoldreaderforandroid.R;
-import com.wangjie.theoldreaderforandroid.database.DbExecutor;
 import com.wangjie.theoldreaderforandroid.entity.CustomDelayTab;
-import com.wangjie.theoldreaderforandroid.entity.FeedItem;
 import com.wangjie.theoldreaderforandroid.prefs.PrefsKey;
 import com.wangjie.theoldreaderforandroid.ui.base.BaseActivity;
 import com.wangjie.theoldreaderforandroid.ui.base.BaseFragment;
@@ -85,12 +82,12 @@ public class MainActivity extends BaseActivity {
             case R.id.menu_main_loginout:
                 new AlertDialog.Builder(context)
                         .setTitle("Warn")
-                        .setMessage("Login Out?")
+                        .setMessage("Logout?")
                         .setNegativeButton("No", null)
                         .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
-                                AppUtil.loginOut(context);
+                                AppUtil.logout(context);
                                 finish();
                             }
                         })
