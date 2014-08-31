@@ -93,7 +93,9 @@ public class FeedFragment extends BaseFragment implements SwipeRefreshLayout.OnR
     private void refreshData(final boolean isFirstPage) {
         final long before = ABTextUtil.isEmpty(feeds) ?
                 System.currentTimeMillis() / 1000 :
-                feeds.get(feeds.size() - 1).getCrawlTimeMsec();
+                feeds.get(feeds.size() - 1).getTimestampUsec() / 1000000;
+
+        Logger.d(TAG, "before: " + before);
 
         ThreadPool.go(new FeedIdsBeforeRuntask(dbExecutor, before, 20){
             @Override
