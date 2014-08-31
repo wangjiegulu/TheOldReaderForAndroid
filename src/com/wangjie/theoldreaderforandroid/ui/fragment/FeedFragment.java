@@ -115,6 +115,7 @@ public class FeedFragment extends BaseFragment implements SwipeRefreshLayout.OnR
                 }
                 if(isFirstPage){
                     feeds.clear();
+                    isNoOlder = false;
                 }
                 feeds.addAll(items);
                 adapter.notifyDataSetChanged();
